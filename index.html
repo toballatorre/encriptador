@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body class="inter-400">
+    <main class="main">
+        <div class="contenedor-original">
+            <header class="logo">
+                <img src="assets/logo.svg" alt="logo-alura">
+            </header>
+            <div class="contenido-original">
+                <div class="texto-original">
+                    <textarea class="inter-400" name="texto-original" id="texto-original" cols="30" rows="10">Ingrese el texto aquí</textarea>
+                </div>
+                <div>
+                    <p class="info">Solo letras minúsculas y sin acentos</p>
+                    <button class="btn btn-dark" id="encriptar" type="button">Encriptar</button>
+                    <button class="btn btn-light" id="desencriptar" type="button">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+        <aside class="contenedor-encriptado">
+            <div id="contenido-encriptado" class="hide">
+                <textarea class="inter-400" name="texto-encriptado" id="texto-encriptado" cols="30" rows="10"></textarea>
+                <button id="copiar" class="btn" type="button">Copiar</button>
+            </div>
+            <div id="placeholder">
+                <img src="assets/munieco.svg" alt="muñeco">
+                <h2 class="inter-700">Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>

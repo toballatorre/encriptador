@@ -1,0 +1,155 @@
+/* Variables */
+:root{
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    
+    --dark-blue-400:#0A3871;
+    --dark-blue-500: #052051;
+
+    --gray-500:#343A40;
+    --gray-400:#495057;
+    
+}
+
+body{
+    background-color: var(--light-blue-100);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor Original */
+.contenedor-original{
+    width: 70%;
+}
+.contenedor-original .logo{
+    max-height: 48px;
+    padding: 40px;
+}
+
+.contenedor-original .logo img{
+    height: 100%;
+}
+
+.contenedor-original .contenido-original {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 81%;
+    justify-content: space-between;
+}
+
+.contenedor-original .contenido-original .texto-original textarea,
+.contenedor-original .contenido-original .texto-original textarea:focus-visible{
+    width: 100%;
+    margin-top: 40px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 32px;
+    color: var(--dark-blue-400);
+}
+
+
+.info{
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--dark-blue-400);
+    margin-bottom: 8px;
+}
+
+/* Encriptado */
+.contenedor-encriptado {
+    display: flex;
+    width: 30%;
+    padding: 1em 0;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    margin: 2em;
+    box-shadow: 0 24px 32px -8px rgba(0,0,0,.08);
+}
+
+.contenedor-encriptado #placeholder{
+    text-align: center;
+    padding: 0 1em;
+}
+
+.contenedor-encriptado #placeholder.hide,
+#contenido-encriptado.hide{
+    display: none;
+}
+
+.contenedor-encriptado #placeholder img{
+    width: 100%;
+}
+.contenedor-encriptado #placeholder h2{
+    color: var(--gray-500);
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+#contenido-encriptado {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contenido-encriptado textarea {
+    width: 83%;
+    margin-top: .4em;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--gray-400);
+}
+/* Botones */
+
+.btn{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    margin: 0 4px 0 4px;
+    border: 1px solid var(--dark-blue-400);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #D8DFE8;
+}
+
+.btn-dark{
+    background-color: var(--dark-blue-400);
+    color: white;
+    border: none;
+}
+.btn-dark:active{
+    background-color: var(--dark-blue-500);
+}
+
+.btn-light{
+    background-color: #D8DFE8;
+    color: var(--dark-blue-400);
+    border: 1px solid var(--dark-blue-400);
+}
+.btn-light:active{
+    background-color: var(--light-blue-200);
+}
